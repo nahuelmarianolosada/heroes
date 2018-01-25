@@ -1,4 +1,12 @@
 <h1>Buscando: <small>{{termino}}</small></h1>
+
+<div class="jumbotron jumbotron-fluid animated fadeIn" *ngIf="heroes.length == 0" >
+  <div class="container">
+    <p class="lead">No se han encontrado resultados para la búsqueda.</p>
+  </div>
+</div>
+
+
 <div class="card-columns">
 
   <div class="card animated fadeIn fast " *ngFor="let heroe of heroes; let i = index" >
